@@ -569,6 +569,8 @@ if(TARGET bgfx::shaderc)
 		set(PROFILES 120 300_es spirv) # pssl
 		if(UNIX AND NOT APPLE)
 			set(PLATFORM LINUX)
+			list(APPEND PROFILES s_4_0)
+			list(APPEND PROFILES s_5_0)
 		elseif(EMSCRIPTEN)
 			set(PLATFORM ASM_JS)
 		elseif(APPLE)
