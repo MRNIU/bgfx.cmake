@@ -544,7 +544,6 @@ if(TARGET bgfx::shaderc)
 		string(REPLACE 120 glsl PROFILE ${PROFILE})
 		string(REPLACE spirv spv PROFILE ${PROFILE})
 		string(REPLACE metal mtl PROFILE ${PROFILE})
-		string(REPLACE s_3_0 dx9 PROFILE ${PROFILE})
 		string(REPLACE s_4_0 dx10 PROFILE ${PROFILE})
 		string(REPLACE s_5_0 dx11 PROFILE ${PROFILE})
 
